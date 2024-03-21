@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="mobile" class="com.kn.entites.Mobile">
+<property name="brand" value="Redmi"></property>
+<property name="ram" value="8Gb"></property>
+<property name="cost" value="8795"></property>
+
+</bean>
+<bean id="mobile1" class="com.kn.entites.Mobile">
+<property name="brand" value="Vivo"></property>
+<property name="ram" value="6Gb"></property>
+<property name="cost" value="879541"></property>
+</bean>
+<bean id="Person" class="com.kn.entites.Person" autowire="byName">
+<property name="name" value="kasi"></property>
+<property name="age" value="22"></property>
+</bean>
+
+
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="trainer1" class="com.kn.entites.Trainer">
+		<property name="id" value="123"></property>
+		<property name="name" value="kasi viswanadh"></property>
+		<property name="salary" value="41000"></property>
+	</bean>
+
+	<bean id="university" class="com.kn.entites.University">
+		<property name="id" value="101">
+		</property>
+		<property name="name" value="JNTUK">
+		</property>
+		<property name="trainer" ref="trainer1">
+		</property>
+	</bean>
+</beans>
